@@ -1,14 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Quiz de Assertividade</title>
+
+
 </head>
+
 <body>
   <div class="container">
-    <h1>Quiz de Assertividade</h1>
+    <h1 id="quiz-title" class="quiz-title-section">QUIZ DE ASSERTIVIDADE</h1>
+    <p>Olá!! Será que sou assertivo no meu trabalho? <br><br>
+
+      Hoje a boa assertividade é fundamental para qualquer pessoa em qualquer área ou posição. <br><br>
+
+      Quando questionamos de forma geral, grande parte das pessoas acreditam ser assertivas, mas será que isso é a
+      realidade? <br><br>
+
+      Este teste é um convite inicial para que as pessoas reflitam e possam realmente perceber se são assertivas.
+      <br><br>
+
+      Lembrando que o primeiro passo para você melhorar é você se conhecer e saber em quais pontos melhorar!<br><br></p>
     <form id="quiz-form">
       <div class="question">
         <p>Fico constrangido quando tenho de enfrentar alguém para resolver um problema?</p>
@@ -35,7 +51,8 @@
         <label><input type="radio" name="q4" value="3"> Raramente</label>
       </div>
       <div class="question">
-        <p>É importante para mim expressar o que eu preciso e desejo, mesmo que eventualmente desagrade as outras pessoas?</p>
+        <p>É importante para mim expressar o que eu preciso e desejo, mesmo que eventualmente desagrade as outras
+          pessoas?</p>
         <label><input type="radio" name="q5" value="3"> Sempre</label>
         <label><input type="radio" name="q5" value="2"> Às vezes</label>
         <label><input type="radio" name="q5" value="1"> Raramente</label>
@@ -53,7 +70,8 @@
         <label><input type="radio" name="q7" value="1"> Raramente</label>
       </div>
       <div class="question">
-        <p>Quando preciso me impor junto a outra pessoa, a forma que normalmente uso é aumentar o tom de voz e olhar penetrante?</p>
+        <p>Quando preciso me impor junto a outra pessoa, a forma que normalmente uso é aumentar o tom de voz e olhar
+          penetrante?</p>
         <label><input type="radio" name="q8" value="1"> Sempre</label>
         <label><input type="radio" name="q8" value="2"> Às vezes</label>
         <label><input type="radio" name="q8" value="3"> Raramente</label>
@@ -65,7 +83,8 @@
         <label><input type="radio" name="q9" value="3"> Raramente</label>
       </div>
       <div class="question">
-        <p>Penso que é importante conquistar a simpatia das pessoas, mesmo que para isso eu tenha que fazer coisa que normalmente não faria?</p>
+        <p>Penso que é importante conquistar a simpatia das pessoas, mesmo que para isso eu tenha que fazer coisa que
+          normalmente não faria?</p>
         <label><input type="radio" name="q10" value="1"> Sempre</label>
         <label><input type="radio" name="q10" value="2"> Às vezes</label>
         <label><input type="radio" name="q10" value="3"> Raramente</label>
@@ -73,11 +92,14 @@
       <div class="navigation-buttons">
         <button type="button" id="back-button">Voltar</button>
         <button type="button" id="next-button">Próxima</button>
-        <button type="button" id="result-button">Resultado</button>
+        <button type="button" id="result-button" style="display: none;">Resultado</button>
+        <button type="button" id="reset-button" style="display: none;">Reiniciar</button>
+        <button type="button" id="download-pdf-button" style="display: none;">Baixar PDF</button>
       </div>
     </form>
     <div id="result"></div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
