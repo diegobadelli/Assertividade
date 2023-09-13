@@ -92,21 +92,11 @@ function goToPreviousQuestion() {
 }
 
 function resetForm() {
-  questions.forEach(question => {
-    const inputs = question.querySelectorAll('input[type="radio"]');
-    inputs.forEach(input => {
-      input.checked = false;
-    });
-  });
-  resultDiv.style.display = 'none';
-  resetButton.style.display = 'none';
-  resultButton.style.display = 'none';
-  downloadPDFButton.style.display = 'none'; // Esconder o botão de baixar PDF
-  backButton.style.display = 'inline-block';
-  nextButton.style.display = 'inline-block';
-  currentQuestionIndex = 0;
-  score = 0;
-  showQuestion(currentQuestionIndex);
+
+  // Reset form logic
+
+  window.location.href = 'index.html';
+
 }
 
 nextButton.addEventListener('click', goToNextQuestion);
