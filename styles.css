@@ -1,5 +1,5 @@
 :root {
-  --primary: #524242;
+  --primary: #2C3E50;
   --secondary: #524242;
   --white: #fff;
   --black: #000;
@@ -8,9 +8,15 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--primary);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(145deg, #2C3E50, #34495E);
+  /* Gradiente de azul escuro para azul mais claro */
   color: var(--white);
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Quiz Title Section */
@@ -21,30 +27,45 @@ body {
   background-color: var(--white);
   opacity: 0.8;
   color: var(--black);
-  font-weight: bolder;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .intro-text {
   text-align: center;
   position: relative;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.0;
+}
+
+.result-text {
+text-align: center;
+position: relative;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 1.1;
 }
 
 .container {
-  max-width: 900px;
-  margin: 50px auto;
+  max-width: 75vw;
+  max-height: 75vh;
+  overflow: hidden;
+  margin: 40px auto;
   padding: 40px;
   justify-content: center;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #4a3b3b, #584747);
-  box-shadow: 23px 23px 45px #302626,
-    -23px -23px 45px #745e5e;
+  border-radius: 10px; /* Arredondamento do container */
+  background: linear-gradient(145deg, #90b8d4, #4883a0); /* Gradiente de azul claro para azul mais escuro */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #333; /* Cor do texto dentro do container */
 }
+
 
 h1 {
   font-size: 24px;
@@ -52,9 +73,10 @@ h1 {
 }
 
 p {
-  font-size: 18px;
-  color: var(--white);
+  color: #333;
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .question {
@@ -63,9 +85,28 @@ p {
   padding: 10px;
   border-radius: 5px;
   justify-content: space-between;
-  color: var(--white);
-  font-weight: bold;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
+
+input[type='radio'] {
+  accent-color: var(--primary);
+  height: 17px;
+  width: 18px;
+}
+
+/* Adicione margem à direita dos labels dos radio buttons */
+label {
+  margin-right: 30px;
+  /* Faz com que o label ocupe uma linha inteira */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  margin-bottom: 20px;
+  /* Adiciona espaçamento entre os radio buttons */
+
+}
+
 
 .navigation-buttons {
   display: flex;
@@ -77,15 +118,29 @@ p {
 
 button {
   border: none;
-  height: 80px;
+  height: max-content;
   width: max-content;
-  border-radius: 50%;
-  border: 5px solid rgb(218, 208, 208);
+  border-radius: 10%;
+  border: 1px solid rgb(44, 62, 80);
   padding: 10px 20px;
-  font-size: 13px;
   cursor: pointer;
   transition: background var(--transition);
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-style: oblique;
+  background-color: #faf7f7;
+  /* Fundo claro */
+  color: #2C3E50;
+  /* Texto azul escuro */
 }
+
+/* Estilos para o botão de reinício */
+.reset-button {
+  position: relative;
+  bottom: 50px; /* Ajuste a distância do fundo conforme necessário */
+  right: center; /* Ajuste a distância da direita conforme necessário */
+}
+
 
 .rounded_button {
   height: 100px;
@@ -95,7 +150,7 @@ button {
 }
 
 button:hover {
-  background-color: #884545;
+  background-color: #2C3E50;
   /* Azul mais escuro ao passar o mouse */
   color: var(--white);
 }

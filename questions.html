@@ -1,17 +1,19 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Quiz de Assertividade</title>
 </head>
 
 <body>
     <div class="container">
-        <h1 id="quiz-title" class="quiz-title-section">QUIZ DE ASSERTIVIDADE</h1>
+        <h1 id="quiz-title" class="quiz-title-section">QUIZ</h1>
         <form id="quiz-form">
             <div class="question">
                 <p>Fico constrangido quando tenho de enfrentar alguém para resolver um problema?</p>
@@ -83,8 +85,6 @@
                 <button type="button" id="back-button">Voltar</button>
                 <button type="button" id="next-button">Próxima</button>
                 <button type="button" id="result-button" style="display: none;">Resultado</button>
-                <button type="button" id="reset-button" style="display: none;">Reiniciar</button>
-                <button type="button" id="download-pdf-button" style="display: none;">Baixar PDF</button>
             </div>
         </form>
         <div id="result"></div>
