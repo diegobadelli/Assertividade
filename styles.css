@@ -1,6 +1,6 @@
 :root {
-  --primary: #5d7288;
-  --secondary: #5d7288;
+  --primary: #524242;
+  --secondary: #524242;
   --white: #fff;
   --black: #000;
   --gray: #888;
@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--white);
+  background-color: var(--primary);
   color: var(--white);
 }
 
@@ -18,28 +18,32 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: var(--black);
+  background-color: var(--white);
   opacity: 0.8;
-  color: var(--white);
+  color: var(--black);
+  font-weight: bolder;
   margin-bottom: 20px;
 }
 
-.intro-text{
+.intro-text {
   text-align: center;
   position: relative;
+  font-size: 15px;
 }
 
 .container {
   max-width: 900px;
   margin: 50px auto;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, var(--primary), #283e51);
+  justify-content: center;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #4a3b3b, #584747);
+  box-shadow: 23px 23px 45px #302626,
+    -23px -23px 45px #745e5e;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 h1 {
@@ -48,31 +52,42 @@ h1 {
 }
 
 p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 30px;
 }
 
 .question {
   margin-bottom: 15px;
+  border-radius: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 
 button {
   border: none;
-  border-radius: 4px;
+  height: 80px;
+  width: max-content;
+  border-radius: 50%;
+  border: 5px solid rgb(218, 208, 208);
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   transition: background var(--transition);
 }
 
-.rounded_button{
+.rounded_button {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -80,17 +95,20 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  background-color: #884545;
+  /* Azul mais escuro ao passar o mouse */
+  color: var(--white);
 }
 
 .result-button {
-background: var(--secondary);
+  background: var(--secondary);
   color: var(--white);
   border-radius: 4px;
 }
 
 .result-button:hover {
-  background-color: #1e7e34; /* Verde mais escuro ao passar o mouse */
+  background-color: #1e7e34;
+  /* Verde mais escuro ao passar o mouse */
 }
 
 #result {
