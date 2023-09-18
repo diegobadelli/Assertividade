@@ -51,6 +51,7 @@ function goToPreviousQuestion() {
   }
 }
 
+
 nextButton.addEventListener('click', goToNextQuestion);
 backButton.addEventListener('click', goToPreviousQuestion);
 resultButton.addEventListener('click', () => {
