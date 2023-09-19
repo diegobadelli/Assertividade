@@ -36,6 +36,11 @@ function goToNextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < totalQuestions) {
     showQuestion(currentQuestionIndex);
+
+    // Mostrar o botão "Voltar" apenas a partir da segunda questão
+    if (currentQuestionIndex > 0) {
+      backButton.classList.remove('hidden');
+    }
   } else {
     resultButton.style.display = 'block';
     backButton.style.display = 'none';
