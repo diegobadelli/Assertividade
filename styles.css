@@ -35,21 +35,27 @@ body {
   z-index: -1;
   -webkit-animation: sliderShape 5s linear infinite;
 }
-@keyframes sliderShape{
-  0%,100%{
-  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-    transform: translate3d(0,0,0) rotateZ(0.01deg);
+
+@keyframes sliderShape {
+
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
   }
-  34%{
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
   }
-  50%{
-    transform: translate3d(0,0,0) rotateZ(0.01deg);
+
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
   }
-  67%{
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
   }
 }
 
@@ -213,4 +219,37 @@ button:hover {
   width: 100px;
   border-radius: 50%;
   border: 5px solid rgb(218, 208, 208);
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .quiz-title-section {
+    font-size: 2rem;
+    /* Decrease the font size of the title */
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .question{
+    font-size: 1.1rem;
+  }
+  .container{
+    width: 90%;
+  }
+
+  p {
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .rounded_button {
+    height: 80px;
+    /* Decrease the button size */
+    width: 80px;
+    font-size: 0.8rem;
+    /* Decrease the font size of the button text */
+  }
 }
