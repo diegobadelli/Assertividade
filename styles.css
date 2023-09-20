@@ -237,8 +237,8 @@ button:hover {
 
   .slider_thumb::before {
     left: 7%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 
   p {
