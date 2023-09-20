@@ -232,10 +232,11 @@ button:hover {
 
   .question {
     font-size: 1.0rem;
+    justify-content: center;
   }
 
   .slider_thumb::before {
-    left: 10%;
+    left: 7%;
     width: 400px;
     height: 400px;
   }
