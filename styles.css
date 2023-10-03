@@ -266,3 +266,33 @@ button:hover {
     /* Decrease the font size of the button text */
   }
 }
+
+@media (min-width: 1367px) {
+  .slider_thumb::before {
+    left: 35%;
+    width: 550px;
+    height: 550px;
+  }
+
+  .container {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 10px;
+    /* Arredondamento do container */
+    background: linear-gradient(145deg, #90b8d4, #4883a0);
+    /* Gradiente de azul claro para azul mais escuro */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    opacity: 80%;
+    /* Cor do texto dentro do container */
+  }
+}
