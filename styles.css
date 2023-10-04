@@ -152,7 +152,7 @@ label {
 
 .navigation-buttons {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 50%;
   display: flex;
   gap: 50px;
@@ -180,7 +180,7 @@ button {
 /* Estilos para o botão de reinício */
 .reset-button {
   position: relative;
-  bottom: 15px;
+  bottom: 3px;
   /* Ajuste a distância do fundo conforme necessário */
   right: center;
   /* Ajuste a distância da direita conforme necessário */
