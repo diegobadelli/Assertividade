@@ -90,12 +90,12 @@ body {
 }
 
 .container {
-  max-width: 90%;
-  max-height: 90%;
+  width: 90%;
+  height: 82vh;
   overflow: hidden;
   margin: 30px auto;
   padding: 30px;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 10px;
   /* Arredondamento do container */
   background: linear-gradient(145deg, #90b8d4, #4883a0);
@@ -151,10 +151,12 @@ label {
 }
 
 .navigation-buttons {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  text-align: center;
+  gap: 50px;
+  transform: translateX(-50%);
 }
 
 button {
@@ -178,7 +180,7 @@ button {
 /* Estilos para o botão de reinício */
 .reset-button {
   position: relative;
-  bottom: 50px;
+  bottom: 15px;
   /* Ajuste a distância do fundo conforme necessário */
   right: center;
   /* Ajuste a distância da direita conforme necessário */
@@ -275,12 +277,10 @@ button:hover {
   }
 
   .container {
-    width: 90%;
-    height: 90%;
+    height: 82vh;
     overflow: hidden;
     margin: 20px auto;
     padding: 30px;
-    justify-content: center;
     border-radius: 10px;
     /* Arredondamento do container */
     background: linear-gradient(145deg, #90b8d4, #4883a0);
@@ -294,5 +294,12 @@ button:hover {
     color: #333;
     opacity: 80%;
     /* Cor do texto dentro do container */
+  }
+  .question {
+    padding: 20px; 
+  }
+  
+  button {
+    padding: 20px 30px;
   }
 }
